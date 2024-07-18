@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Pollini Luxury Woman 2024',
-  description: 'GPollini Luxury Woman and men wear 2024',
+  description: 'Pollini Luxury Woman and men wear 2024',
 };
 
 export default function RootLayout({ children }) {
