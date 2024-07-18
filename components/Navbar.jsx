@@ -11,9 +11,9 @@ const Navbar = () => {
             src="/images/logo.svg"
             alt="pollini logo"
             height={30}
-            width={150}
+            width={140}
           />
-          <nav className="text-xs font-medium tracking-wide ml-6 mt-2">
+          <nav className="text-xs font-medium tracking-wide ml-6 hidden lg:block">
             <ul className="flex gap-8">
               {navLinks.map((link) => (
                 <li key={link.label}>
