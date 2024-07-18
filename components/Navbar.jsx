@@ -4,14 +4,14 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <header className="p-2 pr-8 items-center">
-      <div className="bg-white w-full flex items-center justify-between">
+    <header className="fixed top-0 w-full p-1 pr-8 items-center bg-white">
+      <div className="flex items-center justify-between p-[9px]">
         <div className="flex items-center gap-12">
           <Image
             src="/images/logo.svg"
             alt="pollini logo"
             height={30}
-            width={162}
+            width={150}
           />
           <nav className="text-xs font-medium tracking-wide ml-6 mt-2">
             <ul className="flex gap-8">
@@ -24,15 +24,13 @@ const Navbar = () => {
           </nav>
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-4">
-            <span className="text-xs uppercase font-medium">
-              <Link href="/search">Search</Link>
-            </span>
-            <span className="text-xs font-medium">
-              <Link href="/country">EN|GBP</Link>
-            </span>
-          </div>
+        <div className="flex items-center gap-5">
+          <span className="text-xs uppercase font-medium">
+            <Link href="/search">Search</Link>
+          </span>
+          <span className="text-xs font-medium">
+            <Link href="/country">EN|GBP</Link>
+          </span>
           <Link href="/account">
             <Image
               src="/images/account.svg"
